@@ -6,4 +6,8 @@
 
 
 
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+    <Folder Include="Views\Menu\" />
+  </ItemGroup>
 </Project>

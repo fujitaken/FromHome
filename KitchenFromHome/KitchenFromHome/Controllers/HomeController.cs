@@ -23,7 +23,7 @@ namespace KitchenFromHome.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Cover()
         {
             return View();
         }
