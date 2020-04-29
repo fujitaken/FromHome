@@ -2,34 +2,63 @@
     ViewData["Title"] = "Food Menu";
 }
 
-@{
-    ViewData["Title"] = "Top Page";
-}
-
 <head>
     <style>
-
-
         html {
-            height: 80%;
-        }
-
-        body {
-            height: 80%;
-        }
-
-        .cover-heading {
             height: 100%;
         }
 
-        .cover-container {
-            background-image: url("../img/5.jpg");
+        body {
+            font-family: Meiryo;
+            height: 100%;
+            padding-bottom: 150px;
         }
 
         .container-fluid {
-            background-image: url("../img/5.jpg");
+            width: 80%;
+            min-height: 100%;
+            background-image: url("../img/bg.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: repeat-y;
+        }
+
+        h2.menu:first-letter {
+            font-size: 1.5em;
+            color: orangered;
+        }
+        h2.menu:first-line {
+            background: linear-gradient(transparent 70%, orange 70%);
+        }
+
+        h2.menu {
+            font-family: Meiryo;
+            background: linear-gradient(transparent 70%, orange 70%);
+        }
+
+        .box1 {
+            background-image: url("../img/api.jpg");
+        }
+
+        .box2 {
+            background-image: url("../img/main.jpg");
+            background-repeat: no-repeat;
+        }
+
+        .box3 {
+            background-image: url("../img/pasta.jpg");
+        }
+
+        .box4 {
+            background-image: url("../img/rice.jpg");
+        }
+
+        .box1 .box2 .box3 .box4 {
+            font-family: Meiryo;
+            background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
+            text-align: right;
         }
 
         p {
@@ -42,17 +71,143 @@
     <!--
         <div class=".container-fluid d-flex h-100 p-3 mt-5 flex-column">
     -->
-    <div class="container-fluid d-flex h-100 p-3 flex-column">
-        <!--
-        <main role="main" class="inner cover">
+    <div class="container-fluid d-flex p-3 flex-column">
+        <div class="row">
+            <div class="box col-4 text-white offset-md-4">
+                <div class="container mt-4 mb-4">
+                    <h2 class="menu">Food Menu</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box1 col-md-6 text-white">
+                <div class="container mt-4 mb-4">
+                    <h2>Appetizer</h2>
+                    <div class="row">
+                        <div class="col-9 text-right">
+                            ラタトゥイユ
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥300
+                        </div>
+                        <div class="col-9 text-right">
+                            ジャーマンポテト
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥300
+                        </div>
+                        <div class="col-9 text-right">
+                            チョレギサラダ
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥200
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box2 col-md-6 text-white">
+                <div class="container mt-4 mb-4">
+                    <h2>Main</h2>
+                    <div class="row">
+                        <div class="col-9 text-right">
+                            青椒肉絲
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥400
+                        </div>
+                        <div class="col-9 text-right">
+                            豚肉と玉ねぎの甘旨
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥400
+                        </div>
+                        <div class="col-9 text-right">
+                            野菜の肉巻き(大葉/長芋)
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥300
+                        </div>
+                        <div class="col-9 text-right">
+                            うま塩グリルチキン
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥400
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box3 col-md-6 text-white">
+                <div class="container mt-4 mb-4">
+                    <h2>Pasta</h2>
+                    <div class="row">
+                        <div class="col-9 text-right">
+                            ペペロンチーノ
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥300
+                        </div>
+                        <div class="col-9 text-right">
+                            懐かしのナポリタン
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥300
+                        </div>
+                        <div class="col-9 text-right">
+                            鶏肉とホウレンソウのクリームパスタ
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥400
+                        </div>
+                        <div class="col-9 text-right">
+                            茄子とペンネのアラビアータ
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥400
+                        </div>
+                        <div class="col-9 text-right">
+                            ベーコンカルボナーラ
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥400
+                        </div>
+                    </div>
+                </div>
 
-        -->
-        <main role="main" class="cover-heading">
-            <h1 class="display-4 mt-5 text-white">Cafe Stay Home</h1>
-            <p class="text-white-50 mb-5">〜Beat the Coronavirus〜</p>
-            <p style="font-size:16px;" class="lead text-white-50">Cafe Stay Home の店主は、コロナウイルスによる自粛期間を過ごすうち、<br ¥>当たり前だった外食の趣深さをおうちで味わうことができないかと考えました。<br ¥>美味しいコーヒーやお食事とともに、まるでレストランにいるかのような感覚をお楽しみください。</p>
-            <a href="/" class="btn btn-lg btn-secondary">もっと見る</a>
-        </main>
+            </div>
+            <div class="box4 col-md-6 text-white">
+                <div class="container mt-4 mb-4">
+                    <h2>Rice</h2>
+                    <div class="row">
+                        <div class="col-9 text-right">
+                            チャーハン(たまご/レタス/カレー)
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥400
+                        </div>
+                        <div class="col-9 text-right">
+                            丼もの(豚玉ねぎ/親子)
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥400
+                        </div>
+                        <div class="col-9 text-right">
+                            チキンライス
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥300
+                        </div>
+                        <div class="col-9 text-right">
+                            オムライス
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥400
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
+
 
