@@ -1,3 +1,169 @@
 ﻿@{
     ViewData["Title"] = "Drink Menu";
 }
+
+<head>
+    <style>
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            font-family: Meiryo;
+            height: 100%;
+            padding-bottom: 150px;
+        }
+
+        .container-fluid {
+            width: 80%;
+            min-height: 100%;
+            background-image: url("../img/bg.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: repeat-y;
+        }
+
+        h2.menu:first-letter {
+            font-size: 1.5em;
+            color: darkorange;
+        }
+
+        h2.menu:first-line {
+            background: linear-gradient(transparent 70%, brown 70%);
+        }
+
+        h2.menu {
+            font-family: Meiryo;
+            background: linear-gradient(transparent 70%, brown 70%);
+        }
+
+        .box1 {
+            background-image: url("../img/coffee.jpg");
+        }
+
+        .box2 {
+            background-image: url("../img/juice.jpg");
+        }
+
+        .box1 .box2 {
+            font-family: Meiryo;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body class="text-center">
+    <!--
+        <div class=".container-fluid d-flex h-100 p-3 mt-5 flex-column">
+    -->
+    <div class="container-fluid d-flex p-3 flex-column">
+        <div class="row">
+            <div class="box col-4 text-white offset-md-4">
+                <div class="container mt-4 mb-4">
+                    <h2 class="menu">Drink Menu</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box1 col-md-6 text-white">
+                <div class="container mt-4 mb-4">
+                    <h2>Coffee&Tea</h2>
+                    <div class="row">
+                        <div class="col-9 text-right">
+                            Coffee
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥100
+                        </div>
+                        <div class="col-9 text-right">
+                            Latte
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥200
+                        </div>
+                        <div class="col-9 text-right">
+                            Dalgona Coffee
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥200
+                        </div>
+                        <div class="col-9 text-right">
+                            Earl Grey
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥100
+                        </div>
+                        <div class="col-9 text-right">
+                            Darjeeling
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥100
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box2 col-md-6 text-white">
+                <div class="container mt-4 mb-4">
+                    <h2>Juice&Smoothie</h2>
+                    <div class="row">
+                        <div class="col-9 text-right">
+                            Orange
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥100
+                        </div>
+                        <div class="col-9 text-right">
+                            Apple
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥100
+                        </div>
+                        <div class="col-9 text-right">
+                            Grape
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥100
+                        </div>
+                        <div class="col-9 text-right">
+                            Pineapple
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥100
+                        </div>
+                        <div class="col-9 text-right">
+                            Strawberry Smoothie
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥200
+                        </div>
+                        <div class="col-9 text-right">
+                            Chocolate Smoothie
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥200
+                        </div>
+                        <div class="col-9 text-right">
+                            Banana  Smoothie
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥200
+                        </div>
+                        <div class="col-9 text-right">
+                            Kinako Smoothie
+                        </div>
+                        <div class="col-3 text-right">
+                            ¥200
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
